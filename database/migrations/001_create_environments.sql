@@ -1,1 +1,5 @@
-tomorrow
+CREATE TABLE environments (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    description TEXT
+);

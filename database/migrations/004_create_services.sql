@@ -1,0 +1,7 @@
+CREATE TABLE services (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL,
+    purpose TEXT NOT NULL,
+    date_added TIMESTAMP DEFAULT NOW()
+);
